@@ -1,0 +1,191 @@
+  /* DEFAULT STYLES */
+  
+  * {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    margin: 1.2rem;
+    border: 0.1rem solid black;
+    padding: 1.2rem;
+  }
+  
+  h1 {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 2rem;
+  }
+  
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1rem;
+  }
+  
+  h3 {
+    text-transform: uppercase;
+    color: #ad1457;
+  }
+   
+  hr {
+    border: 0.1rem solid white;
+    margin: 2.5rem 0.3rem;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+/*SECTION STYLES */
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100, 1fr));
+    grid-template-rows: repeat (16, 1fr);
+    grid-gap: 1.2rem;
+  }
+
+  header {
+    text-align: center;
+    background-color: #ad1457;
+    padding: 2rem 0.6rem 6rem 0.6rem;
+    grid-row: 1/3;
+  }
+  
+  side {
+    background-color: #424242;
+    font-size: 1rem;
+    padding: 1.2rem;
+    color: #ffffff;
+    grid-row: 3/11;
+  }
+
+  side p {
+    font-size: 0.9rem;
+  }
+
+  .interests i {
+    margin-right: 20px;
+  }
+
+  .photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 80%;
+  }
+  
+  .flag {
+    width: 25%;
+    max-width: 50px;
+  }
+
+  td {
+    font-size: 0.8rem; 
+  }
+
+  .aboutMe {
+    background-color: #f48fb1;
+    padding: 1.2rem;
+    grid-row: 11/14;
+  }
+  
+  .aboutMe h2 {
+    color: #000000;
+  }
+
+  .history {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+    grid-row: 14/17;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-gap: 1.2rem;
+    }
+  
+    body {
+      margin: 3rem;
+    }
+  
+    header {
+      grid-column: 2/4;
+      grid-row: 1/2;
+    }
+  
+    side {
+      grid-column: 1/2;
+      grid-row: 1/9;
+    }
+
+    side p{
+      font-size: 0.7rem;
+    }
+    
+    td {
+      font-size: 0.8rem; 
+    }
+
+    i {
+      font-size: 0.9em;
+    }
+    
+    .aboutMe {
+      grid-column: 2/4;
+      grid-row: 2/4;
+    }
+  
+    .history {
+      grid-column: 2/4;
+      grid-row: 4/6;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      grid-gap: 1.2rem;
+    }
+  
+    body {
+      margin: 5rem;
+    }
+  
+    header {
+      grid-column: 2/4;
+      grid-row: 1/3;
+    }
+  
+    side {
+      grid-column: 1/2;
+      grid-row: 1/9;
+    }
+ 
+    side p {
+      font-size: 1rem;
+    }
+
+    .skills {
+      font-size: 1rem; 
+    }
+
+    .aboutMe {
+      grid-column: 2/4;
+      grid-row: 3/6;
+    }
+  
+    .history {
+      grid-column: 2/4;
+      grid-row: 6/9;
+    }
+  }
